@@ -3,7 +3,7 @@ In this video we have shown how to create #Firebase app from firebase console an
 
 Source Code: https://github.com/FlutterTutorialNet/flutter-firebase
 
-##Timestamps:
+## Timestamps:
 00:00 Intro <br />
 00:08 Expected Output <br />
 01:32 Source code at GitHub <br />
@@ -14,7 +14,7 @@ Source Code: https://github.com/FlutterTutorialNet/flutter-firebase
 ## Use following kotlin version at build.gradle file for avoiding compilation error
 ext.kotlin_version = '1.4.32'
   
-## Following code need to add into settings.gradle file for fixing error.
+## Following code need to add at the end of settings.gradle file for fixing plugins loading error.
  
 
 def flutterProjectRoot = rootProject.projectDir.parentFile.toPath()<br />
