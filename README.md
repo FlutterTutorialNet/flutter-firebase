@@ -1,4 +1,4 @@
-# flutter_firebase
+# Flutter Firebase Integration Example Project
 In this video we have shown how to create #Firebase app from firebase console and integrate that into #Flutter android app including  SHA-1 code taking process. It is very easy to integrate firebase services in flutter like Realtime Database, Google Auth, Analytics and Crash report. After integration we have shown basic database operation with Firebase #RealtimeDatabase. 
 
 Source Code: https://github.com/FlutterTutorialNet/flutter-firebase
