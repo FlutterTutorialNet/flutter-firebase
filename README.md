@@ -3,6 +3,11 @@ In this video we have shown how to create #Firebase app from firebase console an
 
 Source Code: https://github.com/FlutterTutorialNet/flutter-firebase
 
+## Tools & Environment 
+OS: Windows 10
+IDE: Android Studio Arctic Fox 2020.3.1
+Flutter: 2.5.2 & Dart: 2.14.3
+
 ## Timestamps:
 00:00 Intro <br />
 00:08 Expected Output <br />
