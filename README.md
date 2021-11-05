@@ -1,16 +1,52 @@
 # flutter_firebase
+In this video we have shown how to create #Firebase app from firebase console and integrate that into #Flutter android app including  SHA-1 code taking process. It is very easy to integrate firebase services in flutter like Realtime Database, Google Auth, Analytics and Crash report. After integration we have shown basic database operation with Firebase #RealtimeDatabase. 
 
-A new Flutter project.
+Source Code: https://github.com/FlutterTutorialNet/flutter-firebase
 
-## Getting Started
+Timestamps:
+00:00 Intro
+00:08 Expected Output
+01:32 Source code at GitHub
+02:07 Main Tutorial
+04:52 SHA-1 Code collection
+13:13 Final output
 
-This project is a starting point for a Flutter application.
+/****
+Use following kotlin version at build.gradle file for avoiding compilation error
+ext.kotlin_version = '1.4.32'
+***/
 
-A few resources to get you started if this is your first Flutter project:
+/***
+Following code need to add into settings.gradle file for fixing error.
+***/
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+def flutterProjectRoot = rootProject.projectDir.parentFile.toPath()
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+def plugins = new Properties()
+def pluginsFile = new File(flutterProjectRoot.toFile(), '.flutter-plugins')
+if (pluginsFile.exists()) {
+    pluginsFile.withReader('UTF-8') { reader -> plugins.load(reader) }
+}
+
+plugins.each { name, path ->
+    def pluginDirectory = flutterProjectRoot.resolve(path).resolve('android').toFile()
+    include ":$name"
+    project(":$name").projectDir = pluginDirectory
+}
+
+Please Subscribe to our YouTube channel and follow us on social medias. 
+
+Other Social Media
+⭐ Website: https://fluttertutorial.net
+⭐ Reddit: https://fluttertutorial.net/s/reddit
+⭐ Facebook: https://fluttertutorial.net/s/facebook
+⭐ GitHub: https://fluttertutorial.net/s/github
+⭐ Twitter: https://fluttertutorial.net/s/twitter
+⭐ Quora: https://fluttertutorial.net/s/quora
+
+
+Please give star our GitHub projects and Subscribe to our YouTube Channel for latest video tutorial that will inspire us for more advanced tutorial.
+
+#flutter
+#flutter_ui
+#flutter_tutorial_net
